@@ -1,0 +1,8 @@
+@media (max-width: 570px) {
+}
+
+@media (min-width: 571px) {
+	#navbar-search {
+		margin-left: 100px;
+	}
+}
