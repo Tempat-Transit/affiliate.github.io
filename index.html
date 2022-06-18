@@ -5,152 +5,102 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Afiliate</title>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <link rel="stylesheet" href="src/bootstrap-5.0.2-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="src/style.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" href="style/style.css">
 </head>
 
-<body>
+<body class="bg-gray-100 font-Roboto antialised">
+    <header class="bg-white divide-y ml-18 border-b fixed inset-x-0">
 
-    <!-- Navbar -->
-    <nav class="navigation-bar bg-white">
-        <div class="container-fluid">
-            <div class="d-flex flex-wrap align-items-center justify-content-md-between p-1">
-                <div class=" col d-flex align-items-center col-md-auto ">
-                    <div id="menu-icon" class="fs-3 mt-2">
-                        <ion-icon onclick="Menu(this)" name="menu"></ion-icon>
-                    </div>
-                    <a href="" class="navbar-brand fs-3 ms-3">Affiliate</a>
-                </div>
-                <div class="col-md-6 col-lg-5 d-none d-md-flex align-items-center justify-content-center">
-                    <div class="input-group flex-nowrap ">
-                        <input type="text" class="form-control rounded-0" placeholder="Search">
-                        <button class="input-group-text rounded-0"><i class="fa-solid fa-magnifying-glass"></i></button>
-                    </div>
-                </div>
-                <ul class="nav col-md-auto">
-                    <li>
-                        <a href="#" class="nav-link px-2 fs-3 text-dark">
-                            <i class="fa-solid fa-bell"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="nav-link px-3">
-                            <button class="btn btn-primary bg-white text-primary">LOGIN</button>
-                        </a>
-                    </li>
-                </ul>
+        <!-- Btn Search Active -->
+        <div id="btn-search-active" class="hidden items-center justify-center px-2  bg-gray-200">
+            <a href="" id="btn-back" class="px-3 mr-[20px] text-xl" onclick="back()">
+                <i class="fa-solid fa-angle-left"></i>
+            </a>
+            <input type="text" placeholder="Search" class="w-[600px] bg-gray-200 border-b-2 px-4 py-2 focus:outline-none focus:border-b-gray-400 sm:w-3/5 lg:w-3/5">
+            <button class=" flex items-center justify-center h-8 w-16 pr-5">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+        </div>
+        <!-- End Btn Search Active -->
+
+
+        <div id="header" class="flex justify-between items-center h-14 mx-4">
+            <div class="ml-3">
+                <a href="" class="text-2xl hidden md:inline">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+                <a href="" class="text-3xl ml-2">Affiliate</a>
+            </div>
+            <div id="btn-search" class=" realtive ml-20 sm:-ml-4 lg:-ml-20">
+                <button class="sm:hidden" onclick="search()"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+
+            <div class=" items-center justify-center flex-grow hidden sm:flex">
+                <input type="text" placeholder="Search" class="border border-gray-400 h-8  px-1 py-2 focus:outline-none focus:border-blue-600 sm:w-3/5 lg:w-3/5">
+                <button class="bg-gray-200 flex items-center justify-center h-8 w-16 border border-gray-400 border-l-0 hover:bg-gray-300">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+            <div class="flex items-center justify-center space-x-4">
+                <button class="flex items-center justify-center text-2xl">
+                    <i class="fa-solid fa-bell"></i>
+                </button>
+                <button type="button" class="border px-5 py-1 border-blue-500 text-blue-500">LOGIN</button>
             </div>
         </div>
-    </nav>
-    <!-- End Navbar -->
-
-    <!-- Sidebar -->
-    <div class="side-bar-menu d-flex invisible-sm ">
-        <div id="MenuSide">
-            <div name="show" id="menu-sidebar" class=" invisible d-flex flex-column flex-shrink-0 p-3 bg-light" style="width: 280px;">
-
-                <ul class="nav nav-pills flex-column mb-auto">
-                    <li class="nav-item">
-                        <a href="#" class="nav-link active" aria-current="page">
-                            <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"/></svg> Home
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="nav-link link-dark">
-                            <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg> Dashboard
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="nav-link link-dark">
-                            <svg class="bi me-2" width="16" height="16"><use xlink:href="#table"/></svg> Orders
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="nav-link link-dark">
-                            <svg class="bi me-2" width="16" height="16"><use xlink:href="#grid"/></svg> Products
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="nav-link link-dark">
-                            <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg> Customers
-                        </a>
-                    </li>
-                </ul>
-                <hr>
-                <div class="dropdown">
-                    <a href="#" class="d-flex align-items-center link-dark text-decoration-none dropdown-toggle" id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
-                        <strong>mdo</strong>
-                    </a>
-                    <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
-                        <li><a class="dropdown-item" href="#">New project...</a></li>
-                        <li><a class="dropdown-item" href="#">Settings</a></li>
-                        <li><a class="dropdown-item" href="#">Profile</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">Sign out</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Icon SideBar -->
-            <div id="icon-sidebar" name="hide" class="">
-                <div class="d-flex flex-column flex-shrink-0 bg-light" style="width: 4.5rem;">
-
-                    <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link text-dark py-3 border-bottom" aria-current="page" title="Home" data-bs-toggle="tooltip" data-bs-placement="right">
-                                <i class="fa-solid fa-house"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="nav-link text-dark py-3 border-bottom" aria-current="page" title="Home" data-bs-toggle="tooltip" data-bs-placement="right">
-                                <i class="fa-solid fa-house"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="nav-link text-dark py-3 border-bottom" aria-current="page" title="Home" data-bs-toggle="tooltip" data-bs-placement="right">
-                                <i class="fa-solid fa-house"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="nav-link text-dark py-3 border-bottom" aria-current="page" title="Home" data-bs-toggle="tooltip" data-bs-placement="right">
-                                <i class="fa-solid fa-house"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="nav-link text-dark py-3 border-bottom" aria-current="page" title="Home" data-bs-toggle="tooltip" data-bs-placement="right">
-                                <i class="fa-solid fa-house"></i>
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="dropdown border-top">
-                        <a href="#" class="d-flex align-items-center justify-content-center p-3 link-dark text-decoration-none dropdown-toggle" id="dropdownUser3" data-bs-toggle="dropdown" aria-expanded="false">
-                            <img src="https://github.com/mdo.png" alt="mdo" width="24" height="24" class="rounded-circle">
-                        </a>
-                        <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser3">
-                            <li><a class="dropdown-item" href="#">New project...</a></li>
-                            <li><a class="dropdown-item" href="#">Settings</a></li>
-                            <li><a class="dropdown-item" href="#">Profile</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Sign out</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+        <div id="header2" class="md:ml-20 flex items-center overflow-x-scroll py-3 px-4 space-x-3 select-none scroll-smooth">
+            <span class="text-sm bg-gray-700 border border-gray-800 rounded-full px-2 py-1 text-gray-200 shadow-inner">Recommendations</span>
+            <span class="text-sm bg-gray-200 border border-gray-300 rounded-full px-2 py-1 text-gray-800 shadow-inner">Tailwindcss</span>
+            <span class="text-sm bg-gray-200 border border-gray-300 rounded-full px-2 py-1 text-gray-800 shadow-inner">Javascript</span>
+            <span class="text-sm bg-gray-200 border border-gray-300 rounded-full px-2 py-1 text-gray-800 shadow-inner">Wrestling</span>
+            <span class="text-sm bg-gray-200 border border-gray-300 rounded-full px-2 py-1 text-gray-800 shadow-inner">Python</span>
+            <span class="text-sm bg-gray-200 border border-gray-300 rounded-full px-2 py-1 text-gray-800 shadow-inner">Coding</span>
+            <span class="text-sm bg-gray-200 border border-gray-300 rounded-full px-2 py-1 text-gray-800 shadow-inner">Coding</span>
+            <span class="text-sm bg-gray-200 border border-gray-300 rounded-full px-2 py-1 text-gray-800 shadow-inner">Coding</span>
+            <span class="text-sm bg-gray-200 border border-gray-300 rounded-full px-2 py-1 text-gray-800 shadow-inner">News</span>
+            <span class="text-sm bg-gray-200 border border-gray-300 rounded-full px-2 py-1 text-gray-800 shadow-inner">CSS</span>
+            <span class="text-sm bg-gray-200 border border-gray-300 rounded-full px-2 py-1 text-gray-800 shadow-inner">Science</span>
+            <span class="text-sm bg-gray-200 border border-gray-300 rounded-full px-2 py-1 text-gray-800 shadow-inner">Comedy</span>
+            <span class="text-sm bg-gray-200 border border-gray-300 rounded-full px-2 py-1 text-gray-800 shadow-inner">Comedy</span>
+            <span class="text-sm bg-gray-200 border border-gray-300 rounded-full px-2 py-1 text-gray-800 shadow-inner">Comedy</span>
+            <span class="text-sm bg-gray-200 border border-gray-300 rounded-full px-2 py-1 text-gray-800 shadow-inner">Comedy</span>
+            <span class="text-sm bg-gray-200 border border-gray-300 rounded-full px-2 py-1 text-gray-800 shadow-inner">Comedy</span>
+            <span class="text-sm bg-gray-200 border border-gray-300 rounded-full px-2 py-1 text-gray-800 shadow-inner">Comedy</span>
+            <span class="text-sm bg-gray-200 border border-gray-300 rounded-full px-2 py-1 text-gray-800 shadow-inner">Comedy</span>
+            <span class="text-sm bg-gray-200 border border-gray-300 rounded-full px-2 py-1 text-gray-800 shadow-inner">Comedy</span>
+            <span class="text-sm bg-gray-200 border border-gray-300 rounded-full px-2 py-1 text-gray-800 shadow-inner">Comedy</span>
+            <span class="text-sm bg-gray-200 border border-gray-300 rounded-full px-2 py-1 text-gray-800 shadow-inner">Comedy</span>
+            <span class="text-sm bg-gray-200 border border-gray-300 rounded-full px-2 py-1 text-gray-800 shadow-inner">Comedy</span>
+            <span class="text-sm bg-gray-200 border border-gray-300 rounded-full px-2 py-1 text-gray-800 shadow-inner">Comedy</span>
+            <span class="text-sm bg-gray-200 border border-gray-300 rounded-full px-2 py-1 text-gray-800 shadow-inner">Comedy</span>
         </div>
-    </div>
-    <!-- End Icon SideBar -->
-    <!-- End Sidebar -->
-    <script src="src/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
-    <script src="src/script.js"></script>
+    </header>
+
+
+    <aside class="fixed top-0 w-18 h-screen bg-white hidden md:flex items-center flex-col mt-[60px] text-gray-700">
+        <div class=" w-full">
+            <button class="flex items-center justify-center flex-col hover:bg-gray-200 w-full px-5 py-4 text-red-600">
+                <i class="fa-solid fa-house"></i>
+                <span class="text-xs">Beranda</span>
+            </button>
+            <button class="flex items-center justify-center flex-col hover:bg-gray-200 w-full py-4 px-5">
+                <i class="fa-solid fa-calendar-check"></i>
+                <span class="text-xs">Kategori</span>
+            </button>
+            <button class="flex items-center justify-center flex-col hover:bg-gray-200 w-full py-4 px-5">
+                <i class="fa-solid fa-calendar-check"></i>
+                <span class="text-xs">Kategori</span>
+            </button>
+            <button class="flex items-center justify-center flex-col hover:bg-gray-200 w-full py-4 px-5">
+                <i class="fa-solid fa-calendar-check"></i>
+                <span class="text-xs">Kategori</span>
+            </button>
+        </div>
+    </aside>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
