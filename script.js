@@ -9,3 +9,15 @@ function back(){
   document.getElementById('btn-search-active').classList.add('flex')
   document.getElementById('btn-search-active').classList.add('hidden')
 }
+
+
+function Dropdown() {
+  document.getElementById('submenu').classList.toggle('hidden');
+  document.getElementById('arrow').classList.toggle('rotate-0');
+}
+
+function opensidebar() {
+  document.getElementById('open-sidebar').classList.remove('hidden')
+  document.getElementById('icon-side').classList.add('lg:hidden')
+
+}
