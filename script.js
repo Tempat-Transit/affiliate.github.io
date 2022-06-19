@@ -16,6 +16,8 @@ function Dropdown() {
   document.getElementById('arrow').classList.toggle('rotate-0');
 }
 
+Dropwdown()
+
 function opensidebar() {
   document.getElementById('open-sidebar').classList.remove('hidden')
   document.getElementById('icon-side').classList.add('lg:hidden')
