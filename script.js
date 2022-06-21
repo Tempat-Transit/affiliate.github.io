@@ -22,4 +22,10 @@ function opensidebar() {
   document.getElementById('open-sidebar').classList.remove('hidden')
   document.getElementById('icon-side').classList.add('lg:hidden')
 
+  document.querySelector('main').classList.add('md:ml-[240px]')
+  document.querySelector('main').classList.remove('md:ml-24')
+
+  document.querySelector('#header2').classList.add('md:ml-[230px]')
+  document.querySelector('#header2').classList.remove('md:ml-20')
+
 }
