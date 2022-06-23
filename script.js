@@ -11,6 +11,14 @@ function back(){
 }
 
 
+function searching() {
+  document.getElementById('search').addEventListener('keypress', function(event){
+    if ( event.key === "Enter" ) {
+      window.location = "search-result.html";
+    }
+  })
+}
+
 function Dropdown() {
   document.getElementById('submenu').classList.toggle('hidden');
   document.getElementById('arrow').classList.toggle('rotate-0');

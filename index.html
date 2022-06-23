@@ -31,14 +31,14 @@
                 <span class="hidden md:inline cursor-pointer">
                 <i class="fa-solid fa-bars" onclick="opensidebar()"></i>
             </span>
-                <a href="" class="text-3xl -ml-3 md:ml-2">Affiliate</a>
+                <a href="index.html" class="text-3xl -ml-3 md:ml-2 curdor-pointer">Affiliate</a>
             </div>
             <div id="btn-search" class=" realtive ml-20 sm:-ml-4 lg:-ml-20">
                 <button class="sm:hidden" onclick="search()"><i class="fa-solid fa-magnifying-glass"></i></button>
             </div>
 
             <div class=" items-center justify-center flex-grow hidden sm:flex">
-                <input type="text" placeholder="Search" class="border border-gray-400 h-8  px-1 py-2 focus:outline-none focus:border-blue-600 sm:w-3/5 lg:w-3/5">
+                <input id="search" onkeypress="searching(event)" name="search" type="text" placeholder="Search" class="border border-gray-400 h-8  px-1 py-2 focus:outline-none focus:border-blue-600 sm:w-3/5 lg:w-3/5">
                 <button class="bg-gray-200 flex items-center justify-center h-8 w-16 border border-gray-400 border-l-0 hover:bg-gray-300">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </button>

@@ -29,33 +29,33 @@
 
         <div id="header" class="flex justify-between items-center h-14 mx-4">
             <div class="ml-3 text-2xl  md:inline">
-                <span class="hidden">
+                <span class="hidden md:inline cursor-pointer">
                 <i class="fa-solid fa-bars" onclick="opensidebar()"></i>
             </span>
-                <a href="" class="text-3xl ml-2">Affiliate</a>
+                <a href="index.html" class="text-3xl -ml-3 md:ml-2 cursor-pointer">Affiliate</a>
             </div>
-            <div id="btn-search" class=" realtive ml-20 sm:-ml-4 lg:-ml-20">
-                <button class="sm:hidden" onclick="search()"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <div id="btn-search " class=" realtive ml-20 sm:-ml-4 lg:-ml-20 ">
+                <button class="sm:hidden " onclick="search() "><i class="fa-solid fa-magnifying-glass "></i></button>
             </div>
 
-            <div class=" items-center justify-center flex-grow hidden sm:flex">
-                <input type="text" placeholder="Search" class="border border-gray-400 h-8  px-1 py-2 focus:outline-none focus:border-blue-600 sm:w-3/5 lg:w-3/5">
-                <button class="bg-gray-200 flex items-center justify-center h-8 w-16 border border-gray-400 border-l-0 hover:bg-gray-300">
-                    <i class="fa-solid fa-magnifying-glass"></i>
+            <div class=" items-center justify-center flex-grow hidden sm:flex ">
+                <input type="text " placeholder="Search " class="border border-gray-400 h-8 px-1 py-2 focus:outline-none focus:border-blue-600 sm:w-3/5 lg:w-3/5 ">
+                <button class="bg-gray-200 flex items-center justify-center h-8 w-16 border border-gray-400 border-l-0 hover:bg-gray-300 ">
+                    <i class="fa-solid fa-magnifying-glass "></i>
                 </button>
             </div>
-            <div class="flex items-center justify-center space-x-4">
-                <button class="flex items-center justify-center text-2xl">
-                    <i class="fa-solid fa-bell"></i>
+            <div class="flex items-center justify-center space-x-4 ">
+                <button class="flex items-center justify-center text-2xl ">
+                    <i class="fa-solid fa-bell "></i>
                 </button>
-                <button type="button" class="border px-5 py-1 border-blue-500 text-blue-500">LOGIN</button>
+                <button type="button " class="border px-5 py-1 border-blue-500 text-blue-500 ">LOGIN</button>
             </div>
         </div>
 
 
         <!-- Sidebar Open -->
-        <div id="open-sidebar" class="hidden">
-            <div class="sidebar fixed top-0 bottom-0 p-2 w-[300px] overflow-y-auto text-center bg-white">
+        <div id="open-sidebar" class="hidden z-20">
+            <div class="sidebar fixed top-0 bottom-0 p-2 w-[220px] overflow-y-auto text-center bg-white">
                 <div class="text-gray-900 text-xl">
                     <div class="p-2.5 mt-1 flex items-center">
                         <a href="" class="cursor-pointer">
@@ -65,13 +65,13 @@
                     </div>
                     <hr class="my-2 text-gray-600">
                 </div>
-                <div class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer">
+                <div class="p-2.5 mt-1 flex items-center rounded-md px-4 duration-300 cursor-pointer">
                     <i class="fa-solid fa-house"></i>
-                    <span class="ml-4 text-xl cursor-pointer">Beranda</span>
+                    <span class="ml-4 text-md cursor-pointer">Beranda</span>
                 </div>
-                <div class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer" onclick="Dropdown()">
+                <div class="p-2.5 mt-1 flex items-center rounded-md px-4 duration-300 cursor-pointer" onclick="Dropdown()">
                     <i class="fa-solid fa-calendar-check"></i>
-                    <span class="ml-4 text-xl cursor-pointer mr-4">Kategori</span>
+                    <span class="ml-4 text-md cursor-pointer mr-4">Kategori</span>
                     <a href="" class="text-xl">
                         <i class="fa-solid fa-angle-up" id="arrow"></i>
                     </a>
@@ -85,47 +85,69 @@
                         <a href="">Shopee</a></h1>
                 </div>
 
-                <div class="p-2.5 mt-3 flex items-center rounded-md px-4 duration300 cursor-pointer ">
+                <div class="p-2.5 mt-1 flex items-center rounded-md px-4 duration300 cursor-pointer ">
                     <i class="fa-solid fa-house "></i>
-                    <span class="ml-4 text-xl cursor-pointer ">Beranda</span>
+                    <span class="ml-4 text-md cursor-pointer ">Marketplace</span>
                 </div>
-                <div class="p-2.5 mt-3 flex items-center rounded-md px-4 duration300 cursor-pointer ">
+                <div class="p-2.5 mt-1 flex items-center rounded-md px-4 duration300 cursor-pointer ">
                     <i class="fa-solid fa-house "></i>
-                    <span class="ml-4 text-xl cursor-pointer ">Beranda</span>
+                    <span class="ml-4 text-md cursor-pointer ">Health</span>
                 </div>
                 <hr class="my-2 text-gray-600 ">
 
+                <div class="p-2.5 mt-1 flex items-center rounded-md px-4 duration300 cursor-pointer ">
+                    <i class="fa-solid fa-house "></i>
+                    <span class="ml-4 text-md cursor-pointer ">Marketplace</span>
+                </div>
+                <div class="p-2.5 mt-1 flex items-center rounded-md px-4 duration300 cursor-pointer ">
+                    <i class="fa-solid fa-house "></i>
+                    <span class="ml-4 text-md cursor-pointer ">Health</span>
+                </div>
+                <div class="p-2.5 mt-1 flex items-center rounded-md px-4 duration300 cursor-pointer ">
+                    <i class="fa-solid fa-house "></i>
+                    <span class="ml-4 text-md cursor-pointer ">Marketplace</span>
+                </div>
+                <div class="p-2.5 mt-1 flex items-center rounded-md px-4 duration300 cursor-pointer ">
+                    <i class="fa-solid fa-house "></i>
+                    <span class="ml-4 text-xl cursor-pointer ">Health</span>
+                </div>
+                <div class="p-2.5 mt-1 flex items-center rounded-md px-4 duration300 cursor-pointer ">
+                    <i class="fa-solid fa-house "></i>
+                    <span class="ml-4 text-md cursor-pointer ">Health</span>
+                </div>
+                <hr class="my-2 text-gray-600 ">
             </div>
+
         </div>
         <!-- End Sidebar Open -->
 
 
-        <div id="header2" class="md:ml-20 flex items-center overflow-x-scroll py-1 px-4 space-x-3 select-none scroll-smooth">
-            <span class="text-md bg-gray-200 border border-gray-300 w-32 rounded-sm px-5 py-1 divide-x text-gray-800 shadow-inner inline-flex justify-items-center"> <span class="text-md -ml-3 pr-2"><i class="fa-solid fa-compass"></i></span> Explore</span>
-            <hr class="border-r-2 border-gray-200 h-10">
-            <span class="text-sm bg-gray-700 border border-gray-800 rounded-full px-2  text-gray-200 shadow-inner">Semua</span>
-            <span class="text-sm bg-gray-200 border border-gray-300 rounded-full px-2  text-gray-800 shadow-inner">Javascript</span>
-            <span class="text-sm bg-gray-200 border border-gray-300 rounded-full px-2  text-gray-800 shadow-inner">Wrestling</span>
-            <span class="text-sm bg-gray-200 border border-gray-300 rounded-full px-2  text-gray-800 shadow-inner">Python</span>
-            <span class="text-sm bg-gray-200 border border-gray-300 rounded-full px-2  text-gray-800 shadow-inner">Coding</span>
-            <span class="text-sm bg-gray-200 border border-gray-300 rounded-full px-2  text-gray-800 shadow-inner">Coding</span>
-            <span class="text-sm bg-gray-200 border border-gray-300 rounded-full px-2  text-gray-800 shadow-inner">Coding</span>
-            <span class="text-sm bg-gray-200 border border-gray-300 rounded-full px-2  text-gray-800 shadow-inner">News</span>
-            <span class="text-sm bg-gray-200 border border-gray-300 rounded-full px-2  text-gray-800 shadow-inner">CSS</span>
-            <span class="text-sm bg-gray-200 border border-gray-300 rounded-full px-2  text-gray-800 shadow-inner">Science</span>
-            <span class="text-sm bg-gray-200 border border-gray-300 rounded-full px-2  text-gray-800 shadow-inner">Comedy</span>
-            <span class="text-sm bg-gray-200 border border-gray-300 rounded-full px-2  text-gray-800 shadow-inner">Comedy</span>
-            <span class="text-sm bg-gray-200 border border-gray-300 rounded-full px-2  text-gray-800 shadow-inner">Comedy</span>
-            <span class="text-sm bg-gray-200 border border-gray-300 rounded-full px-2  text-gray-800 shadow-inner">Comedy</span>
-            <span class="text-sm bg-gray-200 border border-gray-300 rounded-full px-2  text-gray-800 shadow-inner">Comedy</span>
-            <span class="text-sm bg-gray-200 border border-gray-300 rounded-full px-2  text-gray-800 shadow-inner">Comedy</span>
-            <span class="text-sm bg-gray-200 border border-gray-300 rounded-full px-2  text-gray-800 shadow-inner">Comedy</span>
-            <span class="text-sm bg-gray-200 border border-gray-300 rounded-full px-2  text-gray-800 shadow-inner">Comedy</span>
-            <span class="text-sm bg-gray-200 border border-gray-300 rounded-full px-2  text-gray-800 shadow-inner">Comedy</span>
-            <span class="text-sm bg-gray-200 border border-gray-300 rounded-full px-2  text-gray-800 shadow-inner">Comedy</span>
-            <span class="text-sm bg-gray-200 border border-gray-300 rounded-full px-2  text-gray-800 shadow-inner">Comedy</span>
-            <span class="text-sm bg-gray-200 border border-gray-300 rounded-full px-2  text-gray-800 shadow-inner">Comedy</span>
-            <span class="text-sm bg-gray-200 border border-gray-300 rounded-full px-2  text-gray-800 shadow-inner">Comedy</span>
+        <div id="header2 " class="md:ml-28 flex items-center overflow-x-scroll py-1 px-4 space-x-3 select-none scroll-smooth ">
+            <span class="text-md bg-gray-200 border border-gray-300 w-32 rounded-sm px-5 py-1 divide-x text-gray-800 shadow-inner inline-flex justify-items-center "> <span class="text-md -ml-3 pr-2 "><i class="fa-solid fa-compass "></i></span> Explore</span>
+            <hr class="border-r-2 border-gray-200 h-10 ">
+            <span class="text-sm bg-gray-700 border border-gray-800 rounded-full px-2 text-gray-200 shadow-inner ">Semua</span>
+            <span class="text-sm bg-gray-200 border border-gray-300 rounded-full px-2 text-gray-800 shadow-inner ">Javascript</span>
+            <span class="text-sm bg-gray-200 border border-gray-300 rounded-full px-2 text-gray-800 shadow-inner ">Wrestling</span>
+            <span class="text-sm bg-gray-200 border border-gray-300 rounded-full px-2 text-gray-800 shadow-inner ">Python</span>
+            <span class="text-sm bg-gray-200 border border-gray-300 rounded-full px-2 text-gray-800 shadow-inner ">Coding</span>
+            <span class="text-sm bg-gray-200 border border-gray-300 rounded-full px-2 text-gray-800 shadow-inner ">Coding</span>
+            <span class="text-sm bg-gray-200 border border-gray-300 rounded-full px-2 text-gray-800 shadow-inner ">Coding</span>
+            <span class="text-sm bg-gray-200 border border-gray-300 rounded-full px-2 text-gray-800 shadow-inner ">News</span>
+            <span class="text-sm bg-gray-200 border border-gray-300 rounded-full px-2 text-gray-800 shadow-inner ">CSS</span>
+            <span class="text-sm bg-gray-200 border border-gray-300 rounded-full px-2 text-gray-800 shadow-inner ">Science</span>
+            <span class="text-sm bg-gray-200 border border-gray-300 rounded-full px-2 text-gray-800 shadow-inner ">Comedy</span>
+            <span class="text-sm bg-gray-200 border border-gray-300 rounded-full px-2 text-gray-800 shadow-inner ">Comedy</span>
+            <span class="text-sm bg-gray-200 border border-gray-300 rounded-full px-2 text-gray-800 shadow-inner ">Comedy</span>
+            <span class="text-sm bg-gray-200 border border-gray-300 rounded-full px-2 text-gray-800 shadow-inner ">Comedy</span>
+            <span class="text-sm bg-gray-200 border border-gray-300 rounded-full px-2 text-gray-800 shadow-inner ">Comedy</span>
+            <span class="text-sm bg-gray-200 border border-gray-300 rounded-full px-2 text-gray-800 shadow-inner ">Comedy</span>
+            <span class="text-sm bg-gray-200 border border-gray-300 rounded-full px-2 text-gray-800 shadow-inner ">Comedy</span>
+            <span class="text-sm bg-gray-200 border border-gray-300 rounded-full px-2 text-gray-800 shadow-inner ">Comedy</span>
+            <span class="text-sm bg-gray-200 border border-gray-300 rounded-full px-2 text-gray-800 shadow-inner ">Comedy</span>
+            <span class="text-sm bg-gray-200 border border-gray-300 rounded-full px-2 text-gray-800 shadow-inner ">Comedy</span>
+            <span class="text-sm bg-gray-200 border border-gray-300 rounded-full px-2 text-gray-800 shadow-inner ">Comedy</span>
+            <span class="text-sm bg-gray-200 border border-gray-300 rounded-full px-2 text-gray-800 shadow-inner ">Comedy</span>
+            <span class="text-sm bg-gray-200 border border-gray-300 rounded-full px-2 text-gray-800 shadow-inner ">Comedy</span>
         </div>
     </header>
 
@@ -133,23 +155,27 @@
     <!-- Icon Sidebar -->
 
     <aside id="icon-side" class="fixed top-0 w-18 h-screen bg-white hidden md:flex items-center flex-col mt-[60px] text-gray-700">
-        <div class=" w-full">
+        <div class=" w-full relative">
             <button class="flex items-center justify-center flex-col hover:bg-gray-200 w-full px-5 py-4 text-red-600">
-                <i class="fa-solid fa-house"></i>
-                <span class="text-xs">Beranda</span>
-            </button>
+            <i class="fa-solid fa-house"></i>
+            <span class="text-xs">Beranda</span>
+        </button>
             <button class="flex items-center justify-center flex-col hover:bg-gray-200 w-full py-4 px-5">
-                <i class="fa-solid fa-calendar-check"></i>
-                <span class="text-xs">Kategori</span>
-            </button>
+            <i class="fa-solid fa-calendar-check"></i>
+            <span class="text-xs">Kategori</span>
+        </button>
             <button class="flex items-center justify-center flex-col hover:bg-gray-200 w-full py-4 px-5">
-                <i class="fa-solid fa-calendar-check"></i>
-                <span class="text-xs">Kategori</span>
-            </button>
+            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" width="5" height="2" class="font-bold style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope yt-icon"><path d="M10,18v-6l5,3L10,18z M17,3H7v1h10V3z M20,6H4v1h16V6z M22,9H2v12h20V9z M3,10h18v10H3V10z" class="style-scope yt-icon"></path></g></svg>
+            <span class="text-xs">Subcription</span>
+        </button>
             <button class="flex items-center justify-center flex-col hover:bg-gray-200 w-full py-4 px-5">
-                <i class="fa-solid fa-calendar-check"></i>
-                <span class="text-xs">Kategori</span>
-            </button>
+            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" width="5" height="2" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope yt-icon"><path d="M9.8,9.8l-3.83,8.23l8.23-3.83l3.83-8.23L9.8,9.8z M13.08,12.77c-0.21,0.29-0.51,0.48-0.86,0.54 c-0.07,0.01-0.15,0.02-0.22,0.02c-0.28,0-0.54-0.08-0.77-0.25c-0.29-0.21-0.48-0.51-0.54-0.86c-0.06-0.35,0.02-0.71,0.23-0.99 c0.21-0.29,0.51-0.48,0.86-0.54c0.35-0.06,0.7,0.02,0.99,0.23c0.29,0.21,0.48,0.51,0.54,0.86C13.37,12.13,13.29,12.48,13.08,12.77z M12,3c4.96,0,9,4.04,9,9s-4.04,9-9,9s-9-4.04-9-9S7.04,3,12,3 M12,2C6.48,2,2,6.48,2,12s4.48,10,10,10s10-4.48,10-10S17.52,2,12,2 L12,2z" class="style-scope yt-icon"></path></g></svg>
+            <span class="text-xs">Explorer</span>
+        </button>
+            <button class="flex items-center justify-center flex-col hover:bg-gray-200 w-full py-4 px-5">
+            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" width="5" height="2" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope yt-icon"><path d="M11,7l6,3.5L11,14V7L11,7z M18,20H4V6H3v15h15V20z M21,18H6V3h15V18z M7,17h13V4H7V17z" class="style-scope yt-icon"></path></g></svg>
+            <span class="text-xs">Koleksi</span>
+        </button>
         </div>
     </aside>
     <!-- End Icon Sidebar -->
@@ -157,19 +183,19 @@
 
     <!-- Content -->
 
-    <main class=" ml-0 md:ml-24 pt-32 pb-12">
-        <div class="space-y-4">
-            <h3 class=" text-xl font-bold ">Recommended</h3>
+    <main class=" ml-0 md:ml-28 pt-32 pb-12 ">
+        <div class="space-y-4 space-x-2">
+            <h3 class="ml-3 md:ml-0 text-xl font-bold ">Hasil Penelusuran</h3>
 
-            <div class="mt-4 grid grid-cols-1 space-y-10 md:grid-cols-3 row-gap-10 col-gap-2 ">
+            <div class="mt-4 grid grid-cols-3 space-y-10 md:grid-cols-3 row-gap-10 col-gap-2 ">
 
 
 
                 <!-- Video -->
 
-                <div class="w-full  ml-1 ">
-                    <div class=" w-[375px] bg-gray-700 overflow-hidden " data-toggle="modal " data-target="#myModal ">
-                        <iframe width="375 " height="250 " src="https://www.youtube.com/embed/xxxmemCgR5U " title="YouTube video player " frameborder="0 " allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture " allowfullscreen></iframe>
+                <div class=" ml-1 ">
+                    <div class="w-[200px]  md:w-[375px] g-gray-700 overflow-hidden " data-toggle="modal " data-target="#myModal ">
+                        <iframe class="w-[200px] md:w-[375px] md:h-[250px]" src="https://www.youtube.com/embed/xxxmemCgR5U " title="YouTube video player " frameborder="0 " allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture " allowfullscreen></iframe>
                     </div>
 
                 </div>
@@ -178,16 +204,17 @@
 
                 <!--Deskripsi-->
 
-                <div class="w-68 ml-1 col-span-2 ">
+                <div class="w-full ml-1 col-span-2 ">
                     <div class="flex -mt-[40px] ">
 
-                        <div class="ml-4 col-span2 ">
-                            <div class="text-2xl text-red-500 ">Lorem ipsum</div>
-                            <div class="text-md text-gray-600 ">
+                        <div class="md:ml-4 ml-24 col-span2 ">
+                            <div class="text-sm md:text-2xl text-red-500 ">Lorem ipsum</div>
+                            <div class=" text-sm md:text-md text-gray-600 ">
                                 <p>9 hours ago &middot; 87k views</p>
                                 <br>
-                                <p class="w-[600px] ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, molestias necessitatibus. Aperiam quaerat eius officiis pariatur accusamus possimus, vitae quibusdam perspiciatis! Rem, voluptates modi. Ducimus ipsam
-                                    excepturi corporis quo voluptate ratione quam dolor ab tempora aut quaerat, veniam perferendis! Aliquam eos molestias illo itaque inventore sint cupiditate quisquam ut cumque?</p>
+                                <p class="hidden md:flex md:w-[600px] ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, molestias necessitatibus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, molestias necessitatibus.Lorem, ipsum dolor sit amet consectetur
+                                    adipisicing elit. Deserunt, molestias necessitatibus.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -196,9 +223,9 @@
                 <!--End Deskripsi-->
                 <!-- Video -->
 
-                <div class="w-full  ml-1 ">
-                    <div class=" w-[375px] bg-gray-700 overflow-hidden " data-toggle="modal " data-target="#myModal ">
-                        <iframe width="375 " height="250 " src="https://www.youtube.com/embed/xxxmemCgR5U " title="YouTube video player " frameborder="0 " allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture " allowfullscreen></iframe>
+                <div class=" ml-1 ">
+                    <div class="w-[200px]  md:w-[375px] g-gray-700 overflow-hidden " data-toggle="modal " data-target="#myModal ">
+                        <img class="w-[200px] md:w-[375px] h-[150px] md:h-[250px]" src="https://images.unsplash.com/photo-1500835556837-99ac94a94552?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60 " alt=" ">
                     </div>
 
                 </div>
@@ -207,81 +234,23 @@
 
                 <!--Deskripsi-->
 
-                <div class="w-68 ml-1 col-span-2 ">
-                    <div class="flex mt-2 ">
+                <div class="w-full ml-1 col-span-2 ">
+                    <div class="flex">
 
-                        <div class="ml-4 col-span2 ">
-                            <div class="text-2xl text-red-500 ">Lorem ipsum, dolor sit amet consectetur adipisicing.</div>
-                            <div class="text-md text-gray-600 ">
+                        <div class="md:ml-4 ml-24 col-span2 ">
+                            <div class="text-sm md:text-2xl text-red-500 ">Lorem ipsum</div>
+                            <div class=" text-sm md:text-md text-gray-600 ">
                                 <p>9 hours ago &middot; 87k views</p>
                                 <br>
-                                <p class="w-[600px] ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, molestias necessitatibus. Aperiam quaerat eius officiis pariatur accusamus possimus, vitae quibusdam perspiciatis! Rem, voluptates modi. Ducimus ipsam
-                                    excepturi corporis quo voluptate ratione quam dolor ab tempora aut quaerat, veniam perferendis! Aliquam eos molestias illo itaque inventore sint cupiditate quisquam ut cumque?</p>
+                                <p class="hidden md:flex md:w-[600px] ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, molestias necessitatibus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, molestias necessitatibus.Lorem, ipsum dolor sit amet consectetur
+                                    adipisicing elit. Deserunt, molestias necessitatibus.
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!--End Deskripsi-->
-                <!-- Video -->
-
-                <div class="w-full  ml-1 ">
-                    <div class=" w-[375px] bg-gray-700 overflow-hidden " data-toggle="modal " data-target="#myModal ">
-                        <iframe width="375 " height="250 " src="https://www.youtube.com/embed/xxxmemCgR5U " title="YouTube video player " frameborder="0 " allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture " allowfullscreen></iframe>
-                    </div>
-
-                </div>
-
-                <!-- End Video -->
-
-                <!--Deskripsi-->
-
-                <div class="w-68 ml-1 col-span-2 ">
-                    <div class="flex mt-2 ">
-
-                        <div class="ml-4 col-span2 ">
-                            <div class="text-2xl text-red-500 ">Lorem ipsum, dolor sit amet consectetur adipisicing.</div>
-                            <div class="text-md text-gray-600 ">
-                                <p>9 hours ago &middot; 87k views</p>
-                                <br>
-                                <p class="w-[600px] ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, molestias necessitatibus. Aperiam quaerat eius officiis pariatur accusamus possimus, vitae quibusdam perspiciatis! Rem, voluptates modi. Ducimus ipsam
-                                    excepturi corporis quo voluptate ratione quam dolor ab tempora aut quaerat, veniam perferendis! Aliquam eos molestias illo itaque inventore sint cupiditate quisquam ut cumque?</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!--End Deskripsi-->
-                <!-- Video -->
-
-                <div class="w-full  ml-1 ">
-                    <div class=" w-[375px] bg-gray-700 overflow-hidden " data-toggle="modal " data-target="#myModal ">
-                        <iframe width="375 " height="250 " src="https://www.youtube.com/embed/xxxmemCgR5U " title="YouTube video player " frameborder="0 " allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture " allowfullscreen></iframe>
-                    </div>
-
-                </div>
-
-                <!-- End Video -->
-
-                <!--Deskripsi-->
-
-                <div class="w-68 ml-1 col-span-2 ">
-                    <div class="flex mt-2 ">
-
-                        <div class="ml-4 col-span2 ">
-                            <div class="text-2xl text-red-500 ">Lorem ipsum, dolor sit amet consectetur adipisicing.</div>
-                            <div class="text-md text-gray-600 ">
-                                <p>9 hours ago &middot; 87k views</p>
-                                <br>
-                                <p class="w-[600px] ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, molestias necessitatibus. Aperiam quaerat eius officiis pariatur accusamus possimus, vitae quibusdam perspiciatis! Rem, voluptates modi. Ducimus ipsam
-                                    excepturi corporis quo voluptate ratione quam dolor ab tempora aut quaerat, veniam perferendis! Aliquam eos molestias illo itaque inventore sint cupiditate quisquam ut cumque?</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!--End Deskripsi-->
-
             </div>
         </div>
         </div>
